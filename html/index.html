@@ -10,19 +10,30 @@
     <title>Hotel - StaySafe</title>
   </head>
   <body>
-    <header>
+    <header style="background-color: tomato; color: white">
       <h1>Hotel - StaySafe</h1>
-      <div>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About Us</a>
-        <a href="#">Rooms</a>
-        <a href="#">Reservations</a>
-      </div>
+      <nav style="width: 100%; font-size: 30px">
+        <a style="text-decoration: none; color: black" href="#">Home</a>
+        <a style="text-decoration: none; color: black" href="services.html"
+          >Services</a
+        >
+        <a style="text-decoration: none; color: black" href="about.html"
+          >About Us</a
+        >
+        <a style="text-decoration: none; color: black" href="rooms.html"
+          >Rooms</a
+        >
+        <a style="text-decoration: none; color: black" href="#">Reservations</a>
+      </nav>
     </header>
     <main>
-      <section>
-        <img src="../public/hero.jpg" alt="hero section" />
+      <section style="text-align: center; font-size: 40px">
+        <img
+          width="100%"
+          height="700px"
+          src="../public/hero.jpg"
+          alt="hero section"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa a magni
           dolorum eveniet architecto quae nemo molestias at ex, aliquam neque
@@ -32,7 +43,7 @@
         <br />
       </section>
       <section>
-        <h1>About Us</h1>
+        <h1 style="text-align: center; background-color: violet">About Us</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis rem
           vero quidem minima harum quaerat aut, maiores, possimus consequuntur
@@ -51,46 +62,111 @@
         </p>
       </section>
       <section>
-        <h1>Contact Us</h1>
-        <form>
-          <label for="name">Name: </label>
-          <input type="text" placeholder="Name:" id="name" />
+        <h1 style="text-align: center; background-color: violet">Contact Us</h1>
+        <form style="width: 100%; height: fit-content">
+          <label style="font-size: 25px" for="name">Name: </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="text"
+            placeholder="Name:"
+            id="name"
+          />
           <br />
-          <label for="email">Email: </label>
-          <input type="email" placeholder="Email:" id="email" />
+          <label style="font-size: 25px" for="email">Email: </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="email"
+            placeholder="Email:"
+            id="email"
+          />
           <br />
-          <label for="password">Password: </label>
-          <input type="password" placeholder="Password:" id="password" />
+          <label style="font-size: 25px" for="password">Password: </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="password"
+            placeholder="Password:"
+            id="password"
+          />
           <br />
-          <label for="phonenumber">Phone Number: </label>
-          <input type="tel" placeholder="07XXXXXXXX" id="phonenumber" />
+          <label style="font-size: 25px" for="phonenumber"
+            >Phone Number:
+          </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="tel"
+            placeholder="07XXXXXXXX"
+            id="phonenumber"
+          />
           <br />
-          <label for="birthdate">birthdate: </label>
-          <input type="date" id="birthdate" />
+          <label style="font-size: 25px" for="birthdate">birthdate: </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="date"
+            id="birthdate"
+          />
           <br />
-          <label for="color">Your Favoraite color: </label>
-          <input type="color" id="color" />
+          <label style="font-size: 25px" for="color"
+            >Your Favoraite color:
+          </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="color"
+            id="color"
+          />
           <br />
-          <label for="file">Your Favoraite color: </label>
-          <input type="file" id="file" />
+          <label style="font-size: 25px" for="file"
+            >Your Favoraite color:
+          </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="file"
+            id="file"
+          />
           <br />
-          <label for="gender">Your gender: </label>
-          <input type="radio" name="gender" id="male" value="male" />
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="female" value="female" />
-          <label for="female">female</label>
+          <label style="font-size: 25px" for="gender">Your gender: </label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+          />
+          <label style="font-size: 25px" for="male">Male</label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+          />
+          <label style="font-size: 25px" for="female">female</label>
           <br />
-          <label for="languages">langugaes</label>
+          <label style="font-size: 25px" for="languages">langugaes</label>
           <br />
           <br />
-          <label for="english">english</label>
-          <input id="english" name="langugaes" type="checkbox" />
+          <label style="font-size: 25px" for="english">english</label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            id="english"
+            name="langugaes"
+            type="checkbox"
+          />
           <br />
-          <label for="arabic">arabic</label>
-          <input id="arabic" name="langugaes" type="checkbox" />
+          <label style="font-size: 25px" for="arabic">arabic</label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            id="arabic"
+            name="langugaes"
+            type="checkbox"
+          />
           <br />
-          <label for="espanish">espanish</label>
-          <input id="espanish" name="langugaes" type="checkbox" />
+          <label style="font-size: 25px" for="espanish">espanish</label>
+          <input
+            style="width: 300px; height: 50px; font-size: 20px"
+            id="espanish"
+            name="langugaes"
+            type="checkbox"
+          />
           <br />
           <br />
           <select name="country" id="country">
@@ -104,15 +180,48 @@
           </select>
           <br />
           <br />
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button
+            style="
+              width: 100px;
+              height: 30px;
+              background-color: blueviolet;
+              color: white;
+              border-radius: 30px;
+            "
+            type="submit"
+          >
+            Submit
+          </button>
+          <button
+            style="
+              width: 100px;
+              height: 30px;
+              background-color: rgb(8, 147, 194);
+              color: white;
+              border-radius: 30px;
+            "
+            type="reset"
+          >
+            Reset
+          </button>
         </form>
       </section>
       <br />
       <section>
-        <h1>Our serveices</h1>
-        <table border="1">
-          <thead>
+        <h1 style="text-align: center; background-color: violet">
+          Our serveices
+        </h1>
+        <table style="width: 100%; border: 1px solid black">
+          <thead
+            style="
+              border: 1px solid black;
+              color: red;
+              font-size: 25px;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-weight: bolder;
+            "
+          >
             <tr>
               <th>Name</th>
               <th>Email</th>
@@ -120,7 +229,15 @@
               <th colspan="2">Notes</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody
+            style="
+              text-align: center;
+              color: darkgreen;
+              font-size: 20px;
+              background-color: cornflowerblue;
+              border: 1px solid brown;
+            "
+          >
             <tr>
               <td>Sewar</td>
               <td>sewar@gmail.com</td>
@@ -174,7 +291,7 @@
         </table>
       </section>
     </main>
-    <footer>
+    <footer style="background-color: tomato; color: white">
       <h3>Hotel - StaySafe</h3>
       <p>ALL RIGHT RESERVED!</p>
       <div>
