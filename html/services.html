@@ -4,6 +4,185 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
+    <style>
+      .section-title {
+        text-align: center;
+        font-size: 60px;
+        text-decoration: underline solid red 10px;
+      }
+      .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .service-room img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .service-room {
+        width: 20em;
+        /* page width * page height */
+        height: fit-content;
+        border: 1px solid black;
+        border-radius: 10px;
+        border-top: none;
+        padding: 10px;
+        margin: 20px;
+      }
+      .service-room:hover {
+        box-shadow: 4px 5px 10px 6px grey;
+        cursor: pointer;
+      }
+      .room-section {
+        text-align: center;
+      }
+      .resturant-list ol {
+        list-style-type: none;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header style="background-color: tomato; color: white; text-align: center">
+      <h1>Hotel - StaySafe</h1>
+      <nav style="width: 100%; font-size: 30px">
+        <a style="text-decoration: none; color: black" href="#">Home</a>
+        <a style="text-decoration: none; color: black" href="services.html"
+          >Services</a
+        >
+        <a style="text-decoration: none; color: black" href="about.html"
+          >About Us</a
+        >
+        <a style="text-decoration: none; color: black" href="rooms.html"
+          >Rooms</a
+        >
+        <a style="text-decoration: none; color: black" href="#">Reservations</a>
+      </nav>
+    </header>
+    <main style="min-height: 100vh">
+      <section class="room-section">
+        <h1 class="section-title">Rooms</h1>
+        <div class="gallery">
+          <div class="service-room">
+            <img src="../public/hotelroom1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            </p>
+          </div>
+          <div class="service-room">
+            <img src="../public/hotelroom1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              minima
+            </p>
+          </div>
+          <div class="service-room">
+            <img src="../public/hotelroom1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              minima
+            </p>
+          </div>
+          <div class="service-room">
+            <img src="../public/hotelroom1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              minima
+            </p>
+          </div>
+          <div class="service-room">
+            <img src="../public/hotelroom1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              minima
+            </p>
+          </div>
+          <div class="service-room">
+            <img src="../public/hotelroom1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              minima
+            </p>
+          </div>
+          <div class="service-room">
+            <img src="../public/hotelroom1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              minima
+            </p>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minima
+          nesciunt temporibus qui. Modi, sit! Sequi delectus similique ullam
+          quia labore nobis omnis quasi maiores, officia in molestias libero at.
+        </p>
+      </section>
+      <section class="restuarant-section">
+        <h1 class="section-title">Resturant</h1>
+        <div class="resturant-list" style="text-align: center">
+          <ol>
+            <li>
+              <img src="../public/hotelroom1.jpg" alt="" />
+            </li>
+            <li>
+              <a href="www.google.com">Google</a>
+            </li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+            <li>chicken</li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <h1 class="section-title">bath</h1>
+        <div class="bath-section">
+          <table>
+            <thead>
+              <tr>
+                <th>bath:</th>
+                <th>service</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>vip</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>vip</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>vip</th>
+              </tr>
+            </tbody>
+          </table>
+          <img src="" alt="" />
+        </div>
+      </section>
+      <section><h1 class="section-title">Rooms</h1></section>
+      <section><h1 class="section-title">Rooms</h1></section>
+    </main>
+    <footer style="background-color: tomato; color: white">
+      <h3>Hotel - StaySafe</h3>
+      <p>ALL RIGHT RESERVED!</p>
+      <div>
+        <a href="#">Contact Us</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+      </div>
+    </footer>
+  </body>
 </html>
+<!-- clean code: اي حد بقرأ الكود وراك يفهمه -->
