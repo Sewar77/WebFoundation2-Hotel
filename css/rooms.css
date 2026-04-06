@@ -1,0 +1,100 @@
+.header {
+  background-color: tomato;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+nav {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.display-rooms {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-room {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  width: 15em;
+  box-shadow: 0 4px 12px rgba(68, 66, 66, 0.327);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+.card-room:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 12px rgba(100, 6, 6, 0.386);
+}
+.card-room-title {
+  color: #990066;
+  font-weight: bolder;
+  text-align: center;
+}
+.card-room-image {
+  text-align: center;
+}
+.card-room-image img {
+  width: 13em;
+  height: 13em;
+  border-radius: 10px;
+}
+.card-room-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-room-buttons {
+  margin: 20px;
+  text-align: center;
+}
+.card-room-button {
+  background-color: #990066;
+  color: aliceblue;
+  border-radius: 10px;
+  width: 12em;
+  padding: 10px;
+  border: none;
+}
+.card-room-button:hover {
+  background-color: #c63896;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(42, 1, 32);
+}
+.reviews-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  gap: 10px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+.review-card {
+  text-align: center;
+  border: 1px dashed #990066;
+  border-radius: 5%;
+}
+.review-card img {
+  width: 20em;
+  height: 15em;
+  border-radius: 50%;
+}
