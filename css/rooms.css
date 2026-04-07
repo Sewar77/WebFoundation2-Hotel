@@ -21,13 +21,64 @@ a {
   text-decoration: none;
   color: black;
 }
+.upper-parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.first-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
 
+.second-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.second-parent img {
+  width: 200px;
+  height: 200px;
+}
+.third-parent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.third-parent img {
+  width: 100px;
+  height: 100px;
+}
+
+.extra-parent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.parent {
+  display: inline;
+}
+.display-test {
+  display: inline-block;
+}
 .display-rooms {
   display: flex;
   flex-direction: row;
   gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
+}
+.p-test {
+  display: inline;
 }
 .card-room {
   border: 1px solid black;
@@ -97,4 +148,23 @@ a {
   width: 20em;
   height: 15em;
   border-radius: 50%;
+}
+
+.recommend-rooms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  text-align: center;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+}
+.recommend-card {
+  border: 1px solid #990066;
+  text-align: center;
+  padding: 10px;
+}
+.recommend-card img {
+  width: 200px;
 }
