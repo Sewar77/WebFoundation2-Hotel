@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.inline {
+  display: flex;
+}
+.parent-position {
+  position: relative;
+  width: 70%;
+  text-align: center;
+}
+.child-position {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  background-color: antiquewhite;
+}
+.parent-position img {
+  width: 100%;
+  height: 100vh;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 600px;
+  width: 100%;
+  align-items: center;
+}
+.section-1 img {
+  width: 500px;
+  height: 500px;
+}
+.section-1 p:hover {
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.section-2 img {
+  width: 400px;
+  height: 500px;
+}
+.section-3 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 300px;
+  align-items: center;
+}
+.main-parent {
+  max-width: 70%;
+  padding: 20px;
+  margin: auto;
+}
+.section-3 img {
+  width: 200px;
+  height: 100%;
+}
+
+.circle-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imgae-designs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 10px;
+  align-items: center;
+}
+
+.imgae-designs img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
