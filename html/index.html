@@ -9,6 +9,16 @@
     <meta name="descripiton" content="this is hotel" />
     <title>Hotel - StaySafe</title>
   </head>
+  <style>
+    .table {
+      width: 100%;
+    }
+    @media (max-width: 500px) {
+      .table {
+        overflow: auto;
+      }
+    }
+  </style>
   <body>
     <header style="background-color: tomato; color: white">
       <h1>Hotel - StaySafe</h1>
@@ -255,13 +265,13 @@
         </form>
       </section>
       <br />
-      <section>
+      <section class="table">
         <h1>table</h1>
 
         <h1 style="text-align: center; background-color: violet">
           Our serveices
         </h1>
-        <table style="width: 100%; border: 1px solid black">
+        <table>
           <thead
             style="
               border: 1px solid black;
