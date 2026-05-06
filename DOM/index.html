@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+      .red {
+        color: red;
+      }
+      .dark {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h1 id="title" class="red">hello</h1>
+    <button id="btn">Click here</button>
+    <hr />
+    <br />
+    <p id="text">change color</p>
+    <button disabled onclick="changeColor()">change</button>
+    <!-- call the function -->
+
+    <input id="item" />
+    <button onclick="addItem()">Add Item</button>
+    <ol id="list">
+      The new items:
+      <li>
+        Old Item
+        <button onclick="deleteItem(this)">Delete</button>
+        <!-- send this element  -->
+      </li>
+    </ol>
+
+    <button onclick="changeBackGround()">make background yellow</button>
+    <button onclick="toggleDark()">Dark mode</button>
+  </body>
+  <!-- <script src="./script.js"></script> -->
+  <script>
+    function toggleDark() {
+      document.getElementById("body").classList.toggle("dark");
+      document.getElementById("list").style.background = "green";
+      document.getElementById("list").style.color = "pink";
+    }
+    function deleteItem(btn) {
+      //waits an element
+      console.log("6");
+      btn.parentElement.remove();
+    }
+    function addItem() {
+      const input = document.getElementById("item");
+      const list = document.getElementById("list");
+
+      const li = document.createElement("li");
+      const btn = document.createElement("button");
+
+      btn.textContent = "Delete";
+      console.log("5");
+      btn.addEventListener("click", () => deleteItem(btn));
+      //   send btn element
+
+      li.textContent = input.value;
+      li.appendChild(btn);
+      //error
+      //debugging
+      list.appendChild(li);
+      console.log("4");
+      if (input.value === "") {
+        console.log("cant be empty");
+        alert("please add a value");
+        return; //return inside a function
+      }
+      input.value = "";
+    }
+
+    // selectors: 1- get element by id
+    const btn = document.getElementById("btn");
+    const title = document.getElementById("title");
+
+    btn.addEventListener("click", () => {
+      title.textContent = "you clicked the btn";
+      btn.disabled = true;
+      title.style.color = "brown";
+    });
+    function changeBackGround() {
+      document.getElementById("body").style.background = "yellow";
+      document.querySelector(".red").style.background = "#99eeff";
+    }
+    // create/define the function
+    function changeColor() {
+      // code
+      document.getElementById("text").classList.add("red");
+    }
+  </script>
+</html>
